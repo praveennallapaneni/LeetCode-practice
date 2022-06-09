@@ -7,6 +7,7 @@ class Solution:
             first_number = nums[i]
             other_number = target - first_number
             
+            #Identifying the second number
             for j in range(i + 1, len(nums)):
                 second_number = nums[j]
                 if second_number == other_number:
