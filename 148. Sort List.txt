@@ -20,7 +20,7 @@ class Solution:
         
         return self.merge(left,right)
 
-    
+    #using fast and slow pointers 
     def getMid(self,head):
         slow = head
         fast = head.next
