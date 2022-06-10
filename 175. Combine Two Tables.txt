@@ -1,0 +1,8 @@
+/* MS SQL Server */
+
+/* Write your T-SQL query statement below */
+select p.firstname, p.lastname, a.city, a.state 
+
+from Person AS p LEFT Join Address As a 
+
+on p.personId = a.personId;
