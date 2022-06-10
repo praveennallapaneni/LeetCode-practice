@@ -12,3 +12,4 @@ class Solution:
                 second_number = nums[j]
                 if second_number == other_number:
                     return [i, j]
+
