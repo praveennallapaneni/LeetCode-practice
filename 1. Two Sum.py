@@ -13,3 +13,16 @@ class Solution:
                 if second_number == other_number:
                     return [i, j]
 
+                
+#hashset solution
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashset = {}
+        
+        for i in range(len(nums)):
+            if target-nums[i]in hashset:
+                return [hashset[target-nums[i]],i]
+            
+            else:
+                hashset[nums[i]]=i
