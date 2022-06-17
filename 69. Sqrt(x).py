@@ -5,7 +5,7 @@ class Solution:
         
         while l<=r:
             mid = l + (r-l)//2
-            if mid * mid <= x and x < (mid+1) * (mid+1):
+            if mid * mid <= x and x < (mid+1) * (mid+1): # if x is between mid*mid and (mid+1)*(mid+1)
                 return mid
             elif x < mid * mid:
                 r = mid - 1
