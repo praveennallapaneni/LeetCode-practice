@@ -1,15 +1,15 @@
+# O(n) Time, O(1) space
+
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         
         dummy = ListNode(0,head)
-        prev = dummy
-        curr = head
+        curr = dummy
         
-        while curr:   
-            if curr.val == val:
-                prev.next = curr.next
+        while curr and curr.next:   
+            if curr.next.val == val:
+                curr.next = curr.next.next
             else:
-                prev = curr
-            curr = curr.next
+                curr = curr.next
         
         return dummy.next
