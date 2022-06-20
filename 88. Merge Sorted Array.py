@@ -9,16 +9,16 @@ class Solution:
         while (a>=0 and b>=0):
             if nums1[a]>nums2[b]:
                 nums1[c]=nums1[a]
-                a = a-1
+                a-=1
             else :
                 nums1[c] = nums2[b]
-                b = b-1
+                b-=1
                 
-            c= c-1
+            c-=1
             
         """ If the there are numbers left in Nums2"""
         
         while (b>=0):
             nums1[c]= nums2[b]
-            b = b-1
-            c = c-1
+            b-=1
+            c-=1
