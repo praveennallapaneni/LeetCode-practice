@@ -7,9 +7,6 @@ class Solution:
             y = z%10
             res = res *10 + y
             z = z//10
-               
-        for i in range(len(temp)):
-            res = res *10 + temp[i]   
        
         if -2**31 <= res <= (2**31)-1:
             if x>0:
